@@ -75,7 +75,8 @@ int main() {
     BST searchTree;
     if(fin.is_open()) {
         while(fin >> val) { 
-            searchTree.insert(val); }
+            searchTree.insert(val); 
+        }
         fin.close();
     }
     std::cout << max_leaf_to_leaf(searchTree.root);
