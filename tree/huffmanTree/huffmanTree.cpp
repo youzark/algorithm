@@ -11,11 +11,13 @@ public:
     Node* left;
     Node* right;
     int seq;
+
     Node(float val,int seq):
         val(val),
         left(nullptr),
         right(nullptr),
         seq(seq) {}
+
     Node(float val,Node* left,Node* right):
         val(val),
         left(left),
@@ -64,7 +66,6 @@ int main() {
         code.push_back('0'); 
         encode(root->right);
         if(!code.empty()) code.pop_back();
-        return;
     };
 
     encode(root);
